@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.cs" Inherits="PS_WebCamera.Global_asax" Language="C#" %>
