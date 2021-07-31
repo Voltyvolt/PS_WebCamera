@@ -113,7 +113,7 @@ namespace PS_WebCamera
 
             for (int i = 0; i < items; i++)
             {
-                var lvOne = 
+                //var lvOne = 
             }
         }
     }
