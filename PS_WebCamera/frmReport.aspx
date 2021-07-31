@@ -37,7 +37,7 @@
                     <dx:LayoutItem Caption="เลขที่คิว" ColSpan="3">
                         <LayoutItemNestedControlCollection>
                             <dx:LayoutItemNestedControlContainer runat="server">
-                                <dx:ASPxTextBox ID="ASPxFormLayout1_E2" runat="server" BackColor="#FFFF99">
+                                <dx:ASPxTextBox ID="txt_QNo" runat="server" BackColor="#FFFF99">
                                 </dx:ASPxTextBox>
                             </dx:LayoutItemNestedControlContainer>
                         </LayoutItemNestedControlCollection>
@@ -105,7 +105,7 @@
                     <dx:LayoutItem Caption="" ColSpan="3">
                         <LayoutItemNestedControlCollection>
                             <dx:LayoutItemNestedControlContainer runat="server">
-                                <dx:ASPxButton ID="btn_Search" runat="server" Text="ค้นหา" Theme="MaterialCompact">
+                                <dx:ASPxButton ID="btn_Search" runat="server" Text="ค้นหา" Theme="MaterialCompact" OnClick="btn_Search_Click">
                                 </dx:ASPxButton>
                             </dx:LayoutItemNestedControlContainer>
                         </LayoutItemNestedControlCollection>
@@ -116,7 +116,7 @@
     </dx:ASPxFormLayout>
             <br />
             <br />
-<dx:ASPxGridView runat="server" AutoGenerateColumns="False" ClientInstanceName="GridV1" Theme="MaterialCompact" Width="742px" EnableTheming="True" ID="GridV1" KeyFieldName="I_QNo"><Columns>
+<dx:ASPxGridView runat="server" AutoGenerateColumns="False" ClientInstanceName="GridV1" Theme="MaterialCompact" Width="742px" EnableTheming="True" ID="GridV1" KeyFieldName="I_QNo" OnPageIndexChanged="GridV1_PageIndexChanged"><Columns>
       <dx:GridViewCommandColumn ShowSelectCheckbox="true" />
 <dx:GridViewDataTextColumn FieldName="I_Dump" ShowInCustomizationForm="True" Caption="ดั้มที่" VisibleIndex="4"></dx:GridViewDataTextColumn>
 <dx:GridViewDataTextColumn FieldName="I_Date" ShowInCustomizationForm="True" Caption="วันที่" VisibleIndex="5"></dx:GridViewDataTextColumn>

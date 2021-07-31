@@ -40,13 +40,13 @@ namespace PS_WebCamera {
         protected global::DevExpress.Web.ASPxFormLayout ASPxFormLayout1;
         
         /// <summary>
-        /// ASPxFormLayout1_E2 control.
+        /// txt_QNo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::DevExpress.Web.ASPxTextBox ASPxFormLayout1_E2;
+        protected global::DevExpress.Web.ASPxTextBox txt_QNo;
         
         /// <summary>
         /// cmb_Rail control.

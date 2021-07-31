@@ -116,5 +116,27 @@ namespace PS_WebCamera
                 //var lvOne = 
             }
         }
+
+        protected void btn_Search_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fncSearchDetail()
+        {
+            var Qno = txt_QNo.Text;
+            var Rail = cmb_Rail.Text;
+            var Date = cmb_SearchDate.Text;
+            var Ka = cmb_Ka.Text;
+            var Dump = cmb_Dump.Text;
+            var Time = cmb_Time.Text;
+
+            var SQL = "Select TOP 10 * From I_Images inner Join Queue_Diary ON I_Images.I_QNo = Queue_Diary.Q_No where "
+        }
+
+        protected void GridV1_PageIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
