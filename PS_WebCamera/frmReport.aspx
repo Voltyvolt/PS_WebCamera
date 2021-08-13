@@ -47,7 +47,7 @@
                             <dx:LayoutItemNestedControlContainer runat="server">
                                 <dx:ASPxComboBox ID="cmb_Rail" runat="server" BackColor="#FFFF99" SelectedIndex="0">
                                     <Items>
-                                        <dx:ListEditItem Selected="True" Text="-- เลือก --" Value="0" />
+                                        <dx:ListEditItem Selected="True" Text="เลือก" Value="0" />
                                         <dx:ListEditItem Text="A" Value="1" />
                                         <dx:ListEditItem Text="B" Value="2" />
                                     </Items>
@@ -68,7 +68,7 @@
                             <dx:LayoutItemNestedControlContainer runat="server">
                                 <dx:ASPxComboBox ID="cmb_Ka" runat="server" AutoPostBack="True" OnSelectedIndexChanged="cmb_Ka_SelectedIndexChanged" SelectedIndex="0" BackColor="#FFFF99">
                                     <Items>
-                                        <dx:ListEditItem Selected="True" Text="-- เลือก --" Value="0" />
+                                        <dx:ListEditItem Selected="True" Text="เลือก" Value="0" />
                                         <dx:ListEditItem Text="กลางวัน" Value="1" />
                                         <dx:ListEditItem Text="กลางคืน" Value="2" />
                                     </Items>
@@ -135,6 +135,53 @@
 <ClientSideEvents SelectionChanged="GridV1_SelectionChanged" />
 <Border BorderColor="#0066FF" BorderStyle="Solid" BorderWidth="2px"></Border>
 </dx:ASPxGridView>
+
+
+            <br />
+            <dx:ASPxFormLayout ID="ASPxFormLayout2" runat="server">
+                <Items>
+                    <dx:LayoutGroup Caption="" ColCount="6">
+                        <Items>
+                            <dx:LayoutItem Caption="อ้อยคุณภาพ" ColSpan="3">
+                                <LayoutItemNestedControlCollection>
+                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                        <dx:ASPxCheckBox ID="chk_Typegood" runat="server" CheckState="Unchecked">
+                                        </dx:ASPxCheckBox>
+                                    </dx:LayoutItemNestedControlContainer>
+                                </LayoutItemNestedControlCollection>
+                            </dx:LayoutItem>
+                            <dx:LayoutItem Caption="อ้อยสกปรก" ColSpan="3">
+                                <LayoutItemNestedControlCollection>
+                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                        <dx:ASPxCheckBox ID="chk_Typebad" runat="server" CheckState="Unchecked">
+                                        </dx:ASPxCheckBox>
+                                    </dx:LayoutItemNestedControlContainer>
+                                </LayoutItemNestedControlCollection>
+                            </dx:LayoutItem>
+                            <dx:LayoutItem Caption="สถานะ" ColSpan="3">
+                                <LayoutItemNestedControlCollection>
+                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                        <dx:ASPxComboBox ID="cmb_Status" runat="server">
+                                            <Items>
+                                                <dx:ListEditItem Text="ผ่าน" Value="0" />
+                                                <dx:ListEditItem Text="ไม่ผ่าน" Value="1" />
+                                            </Items>
+                                        </dx:ASPxComboBox>
+                                    </dx:LayoutItemNestedControlContainer>
+                                </LayoutItemNestedControlCollection>
+                            </dx:LayoutItem>
+                            <dx:LayoutItem Caption="เพราะ" ColSpan="3">
+                                <LayoutItemNestedControlCollection>
+                                    <dx:LayoutItemNestedControlContainer runat="server">
+                                        <dx:ASPxTextBox ID="txt_Remark" runat="server">
+                                        </dx:ASPxTextBox>
+                                    </dx:LayoutItemNestedControlContainer>
+                                </LayoutItemNestedControlCollection>
+                            </dx:LayoutItem>
+                        </Items>
+                    </dx:LayoutGroup>
+                </Items>
+            </dx:ASPxFormLayout>
 
 
             <br />

@@ -112,6 +112,51 @@ namespace PS_WebCamera {
         protected global::DevExpress.Web.ASPxGridView GridV1;
         
         /// <summary>
+        /// ASPxFormLayout2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxFormLayout ASPxFormLayout2;
+        
+        /// <summary>
+        /// chk_Typegood control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxCheckBox chk_Typegood;
+        
+        /// <summary>
+        /// chk_Typebad control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxCheckBox chk_Typebad;
+        
+        /// <summary>
+        /// cmb_Status control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxComboBox cmb_Status;
+        
+        /// <summary>
+        /// txt_Remark control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::DevExpress.Web.ASPxTextBox txt_Remark;
+        
+        /// <summary>
         /// btn_Print control.
         /// </summary>
         /// <remarks>

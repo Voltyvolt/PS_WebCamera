@@ -85,6 +85,33 @@ namespace PS_WebCamera
         #endregion
 
         #region //Check Data
+        public static string fncCheckOnlineStatus(string lvUser)
+        {
+            #region //Connect Database 
+            MySqlConnection con = new MySqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["PSConnection"].ToString());
+            MySqlCommand cmd = new MySqlCommand();
+            MySqlDataReader dr;
+            #endregion  
+
+            string lvReturn = "";
+
+            cmd.Connection = con;
+            con.Open();
+            cmd.CommandText = "SELECT * FROM SysLoginTable WHERE L_UserName = '" + lvUser + "' ";
+            dr = cmd.ExecuteReader();
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    lvReturn = dr["L_UserName"].ToString();
+                }
+            }
+            dr.Close();
+            con.Close();
+
+            return lvReturn;
+        }
+
         public static string fncCheckLogin(string lvUser, string lvPass)
         {
             #region //Connect Database 
@@ -469,6 +496,34 @@ namespace PS_WebCamera
                 while (dr.Read())
                 {
                     lvReturn = dr["Permission_ID"].ToString();
+                }
+            }
+            dr.Close();
+            con.Close();
+
+            return lvReturn;
+        }
+
+        public static string fncGetCarnum2(string lvQno)
+        {
+            #region //Connect Database 
+            SqlConnection con = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["PSConnectionSQL"].ToString());
+            SqlCommand cmd = new SqlCommand();
+            SqlDataReader dr;
+            #endregion  
+
+            string lvReturn = "";
+            lvQno = lvQno + ".1";
+
+            cmd.Connection = con;
+            con.Open();
+            cmd.CommandText = "SELECT Q_CarNum From Queue_Diary Where Q_No = '" + lvQno + "' And Q_Year = '' ";
+            dr = cmd.ExecuteReader();
+            if (dr.HasRows)
+            {
+                while (dr.Read())
+                {
+                    lvReturn = dr["Q_CarNum"].ToString();
                 }
             }
             dr.Close();

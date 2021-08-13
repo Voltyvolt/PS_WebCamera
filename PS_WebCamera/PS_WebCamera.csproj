@@ -48,10 +48,21 @@
     <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
       <HintPath>..\packages\AjaxControlToolkit.20.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Spreadsheet.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Web.ASPxSpreadsheet.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Web.Resources.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.1.Web, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -153,6 +164,8 @@
     <Content Include="frmMatching.aspx" />
     <Content Include="frmReport.aspx" />
     <Content Include="frmReportlist.aspx" />
+    <Content Include="frmShowReport.aspx" />
+    <Content Include="frmShowReport2.aspx" />
     <Content Include="frmSoftware.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\568122.png" />
@@ -287,6 +300,20 @@
     <Compile Include="frmReportlist.aspx.designer.cs">
       <DependentUpon>frmReportlist.aspx</DependentUpon>
     </Compile>
+    <Compile Include="frmShowReport.aspx.cs">
+      <DependentUpon>frmShowReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmShowReport.aspx.designer.cs">
+      <DependentUpon>frmShowReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowReport2.aspx.cs">
+      <DependentUpon>frmShowReport2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmShowReport2.aspx.designer.cs">
+      <DependentUpon>frmShowReport2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frmSoftware.aspx.cs">
       <DependentUpon>frmSoftware.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -330,6 +357,12 @@
     <Compile Include="PS_CaneData\frmQuota.aspx.designer.cs">
       <DependentUpon>frmQuota.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Report1Cane1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report2Cane2.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Root.master.cs">
       <DependentUpon>Root.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -362,6 +395,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Report1Cane1.resx">
+      <DependentUpon>Report1Cane1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report2Cane2.resx">
+      <DependentUpon>Report2Cane2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

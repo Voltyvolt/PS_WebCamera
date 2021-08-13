@@ -17,7 +17,7 @@
                             <dx:LayoutItemNestedControlContainer runat="server">
                                 <dx:ASPxComboBox ID="cmb_Rail" runat="server" BackColor="#FFFF99" SelectedIndex="0">
                                     <Items>
-                                        <dx:ListEditItem Selected="True" Text="-- เลือก --" Value="0" />
+                                        <dx:ListEditItem Selected="True" Text="เลือก" Value="0" />
                                         <dx:ListEditItem Text="A" Value="1" />
                                         <dx:ListEditItem Text="B" Value="2" />
                                     </Items>
@@ -38,7 +38,7 @@
                             <dx:LayoutItemNestedControlContainer runat="server">
                                 <dx:ASPxComboBox ID="cmb_Ka" runat="server" AutoPostBack="True" OnSelectedIndexChanged="cmb_Ka_SelectedIndexChanged" SelectedIndex="0" BackColor="#FFFF99">
                                     <Items>
-                                        <dx:ListEditItem Selected="True" Text="-- เลือก --" Value="0" />
+                                        <dx:ListEditItem Selected="True" Text="เลือก" Value="0" />
                                         <dx:ListEditItem Text="กลางวัน" Value="1" />
                                         <dx:ListEditItem Text="กลางคืน" Value="2" />
                                     </Items>
