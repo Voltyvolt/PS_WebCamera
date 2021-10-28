@@ -101,66 +101,74 @@ namespace PS_WebCamera
 
         private void fncLoadData()
         {
-            DataTable DT = new DataTable();
-            string lvSQL = "Select * From I_Images";
-            DT = GsysSQL.fncGetQueryDataSQL(lvSQL, DT);
-
-            int lvNumrows = DT.Rows.Count;
-
-            DataTable DTNew = new DataTable();
-            DTNew.Columns.Add("I_Rail");
-            DTNew.Columns.Add("I_Dump");
-            DTNew.Columns.Add("I_Date");
-            DTNew.Columns.Add("I_Time");
-            DTNew.Columns.Add("I_Name_30");
-            DTNew.Columns.Add("I_Name_45");
-            DTNew.Columns.Add("I_Name_90");
-
-            for (int i = 0; i < DT.Rows.Count; i++)
+            try
             {
-                string lvField1 = DT.Rows[i]["I_Rail"].ToString();
-                string lvField2 = DT.Rows[i]["I_Dump"].ToString();
-                string lvField3 = GsysFunc.fncChangeSDate(DT.Rows[i]["I_Date"].ToString());
-                string lvField4 = DT.Rows[i]["I_Time"].ToString();
-                string lvField5 = DT.Rows[i]["I_Name_30"].ToString();
-                string lvField6 = DT.Rows[i]["I_Name_45"].ToString();
-                string lvField7 = DT.Rows[i]["I_Name_90"].ToString();
+                DataTable DT = new DataTable();
+                string lvSQL = "Select * From I_Images";
+                DT = GsysSQL.fncGetQueryDataSQL(lvSQL, DT);
 
-                DTNew.Rows.Add(new object[] { lvField1, lvField2, lvField3, lvField4, lvField5, lvField6, lvField7 });
+                int lvNumrows = DT.Rows.Count;
+
+                DataTable DTNew = new DataTable();
+                DTNew.Columns.Add("I_Rail");
+                DTNew.Columns.Add("I_Dump");
+                DTNew.Columns.Add("I_Date");
+                DTNew.Columns.Add("I_Time");
+                DTNew.Columns.Add("I_Name_30");
+                DTNew.Columns.Add("I_Name_45");
+                DTNew.Columns.Add("I_Name_90");
+
+                for (int i = 0; i < DT.Rows.Count; i++)
+                {
+                    string lvField1 = DT.Rows[i]["I_Rail"].ToString();
+                    string lvField2 = DT.Rows[i]["I_Dump"].ToString();
+                    string lvField3 = GsysFunc.fncChangeSDate(DT.Rows[i]["I_Date"].ToString());
+                    string lvField4 = DT.Rows[i]["I_Time"].ToString();
+                    string lvField5 = DT.Rows[i]["I_Name_30"].ToString();
+                    string lvField6 = DT.Rows[i]["I_Name_45"].ToString();
+                    string lvField7 = DT.Rows[i]["I_Name_90"].ToString();
+
+                    DTNew.Rows.Add(new object[] { lvField1, lvField2, lvField3, lvField4, lvField5, lvField6, lvField7 });
+                }
+
+                //ปิดปุ่ม
+                btnAdd1F.Enabled = true;
+                btnAdd1S.Enabled = true;
+                btnAdd1T.Enabled = true;
+
+                btnAdd2F.Enabled = true;
+                btnAdd2S.Enabled = true;
+                btnAdd2T.Enabled = true;
+
+                btnAdd3F.Enabled = true;
+                btnAdd3S.Enabled = true;
+                btnAdd3T.Enabled = true;
+
+                btnAdd4F.Enabled = true;
+                btnAdd4S.Enabled = true;
+                btnAdd4T.Enabled = true;
+
+                btnAdd5F.Enabled = true;
+                btnAdd5S.Enabled = true;
+                btnAdd5T.Enabled = true;
+
+                btnAdd6F.Enabled = true;
+                btnAdd6S.Enabled = true;
+                btnAdd6T.Enabled = true;
+
+                btn_After.Enabled = true;
+                btn_Next.Enabled = true;
+
+                GridV1.DataSource = null;
+                GridV1.DataSource = DTNew;
+                GridV1.DataBind();
+                DT.Dispose();
             }
-
-            //ปิดปุ่ม
-            btnAdd1F.Enabled = true;
-            btnAdd1S.Enabled = true;
-            btnAdd1T.Enabled = true;
-
-            btnAdd2F.Enabled = true;
-            btnAdd2S.Enabled = true;
-            btnAdd2T.Enabled = true;
-
-            btnAdd3F.Enabled = true;
-            btnAdd3S.Enabled = true;
-            btnAdd3T.Enabled = true;
-
-            btnAdd4F.Enabled = true;
-            btnAdd4S.Enabled = true;
-            btnAdd4T.Enabled = true;
-
-            btnAdd5F.Enabled = true;
-            btnAdd5S.Enabled = true;
-            btnAdd5T.Enabled = true;
-
-            btnAdd6F.Enabled = true;
-            btnAdd6S.Enabled = true;
-            btnAdd6T.Enabled = true;
-
-            btn_After.Enabled = true;
-            btn_Next.Enabled = true;
-
-            GridV1.DataSource = null;
-            GridV1.DataSource = DTNew;
-            GridV1.DataBind();
-            DT.Dispose();
+            catch(Exception ex)
+            {
+                Page.Response.Write("<script>console.log('" + ex.ToString() + "');</script>");
+            }
+           
         }
 
         protected void btn_Search_Click(object sender, EventArgs e)

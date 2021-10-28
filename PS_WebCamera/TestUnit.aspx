@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Root.master" AutoEventWireup="true" CodeBehind="Test.aspx.cs" Inherits="PS_WebCamera.Test" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Root.master" AutoEventWireup="true" CodeBehind="TestUnit.aspx.cs" Inherits="PS_WebCamera.Test" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
 
      <script type="text/javascript">

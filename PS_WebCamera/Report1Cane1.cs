@@ -40,11 +40,6 @@ namespace PS_WebCamera
         private XRPictureBox xrPictureBox2;
         private XRPictureBox xrPictureBox4;
         private XRPictureBox xrPictureBox3;
-        private XRLabel xrLabel13;
-        private XRLabel xrLabel14;
-        private XRLabel xrLabel15;
-        private XRLabel xrLabel16;
-        private XRLabel xrLabel17;
         private XRLabel xrLabel18;
         private XRLabel xrLabel19;
         private XRLabel xrLabel21;
@@ -181,11 +176,6 @@ namespace PS_WebCamera
             this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrPictureBox2 = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.xrLabel13 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel14 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel15 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel17 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
@@ -226,12 +216,7 @@ namespace PS_WebCamera
             this.xrLabel6,
             this.xrLabel5,
             this.xrLabel4,
-            this.xrPictureBox2,
-            this.xrLabel13,
-            this.xrLabel14,
-            this.xrLabel15,
-            this.xrLabel16,
-            this.xrLabel17});
+            this.xrPictureBox2});
             this.Detail.HeightF = 752.4999F;
             this.Detail.Name = "Detail";
             this.Detail.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
@@ -239,8 +224,6 @@ namespace PS_WebCamera
             // 
             // xrLabel8
             // 
-            this.xrLabel8.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "SysTemp.S_Fieid1")});
             this.xrLabel8.Font = new System.Drawing.Font("Angsana New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(181.25F, 59.04172F);
             this.xrLabel8.Name = "xrLabel8";
@@ -264,8 +247,6 @@ namespace PS_WebCamera
             // 
             // xrLabel23
             // 
-            this.xrLabel23.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "SysTemp.S_Fieid1")});
             this.xrLabel23.Font = new System.Drawing.Font("Angsana New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.xrLabel23.LocationFloat = new DevExpress.Utils.PointFloat(181.25F, 23.54167F);
             this.xrLabel23.Name = "xrLabel23";
@@ -316,8 +297,6 @@ namespace PS_WebCamera
             // 
             // xrLabel19
             // 
-            this.xrLabel19.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "SysTemp.S_Fieid16")});
             this.xrLabel19.Font = new System.Drawing.Font("Angsana New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.xrLabel19.LocationFloat = new DevExpress.Utils.PointFloat(181.2498F, 165.5415F);
             this.xrLabel19.Name = "xrLabel19";
@@ -351,8 +330,6 @@ namespace PS_WebCamera
             // 
             // xrLabel12
             // 
-            this.xrLabel12.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "SysTemp.S_Fieid10")});
             this.xrLabel12.Font = new System.Drawing.Font("Angsana New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(369.7916F, 202.7084F);
             this.xrLabel12.Name = "xrLabel12";
@@ -364,8 +341,6 @@ namespace PS_WebCamera
             // 
             // xrLabel11
             // 
-            this.xrLabel11.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "SysTemp.S_Fieid9")});
             this.xrLabel11.Font = new System.Drawing.Font("Angsana New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.xrLabel11.LocationFloat = new DevExpress.Utils.PointFloat(180.2083F, 201.75F);
             this.xrLabel11.Name = "xrLabel11";
@@ -377,8 +352,6 @@ namespace PS_WebCamera
             // 
             // xrLabel10
             // 
-            this.xrLabel10.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "SysTemp.S_Fieid15")});
             this.xrLabel10.Font = new System.Drawing.Font("Angsana New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.xrLabel10.LocationFloat = new DevExpress.Utils.PointFloat(181.25F, 130.0416F);
             this.xrLabel10.Name = "xrLabel10";
@@ -390,8 +363,6 @@ namespace PS_WebCamera
             // 
             // xrLabel9
             // 
-            this.xrLabel9.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "SysTemp.S_Fieid12")});
             this.xrLabel9.Font = new System.Drawing.Font("Angsana New", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(181.25F, 94.54174F);
             this.xrLabel9.Name = "xrLabel9";
@@ -462,63 +433,8 @@ namespace PS_WebCamera
             this.xrPictureBox2.Sizing = DevExpress.XtraPrinting.ImageSizeMode.StretchImage;
             this.xrPictureBox2.StylePriority.UseBorders = false;
             // 
-            // xrLabel13
-            // 
-            this.xrLabel13.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "SysTemp.S_Fieid1")});
-            this.xrLabel13.LocationFloat = new DevExpress.Utils.PointFloat(693.9583F, 59.04172F);
-            this.xrLabel13.Name = "xrLabel13";
-            this.xrLabel13.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel13.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.xrLabel13.Visible = false;
-            // 
-            // xrLabel14
-            // 
-            this.xrLabel14.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "SysTemp.S_Fieid6")});
-            this.xrLabel14.LocationFloat = new DevExpress.Utils.PointFloat(693.9581F, 82.04174F);
-            this.xrLabel14.Name = "xrLabel14";
-            this.xrLabel14.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel14.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.xrLabel14.Visible = false;
-            this.xrLabel14.AfterPrint += new System.EventHandler(this.xrLabel14_AfterPrint);
-            // 
-            // xrLabel15
-            // 
-            this.xrLabel15.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "SysTemp.S_Fieid7")});
-            this.xrLabel15.LocationFloat = new DevExpress.Utils.PointFloat(693.9581F, 105.0417F);
-            this.xrLabel15.Name = "xrLabel15";
-            this.xrLabel15.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel15.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.xrLabel15.Visible = false;
-            this.xrLabel15.AfterPrint += new System.EventHandler(this.xrLabel15_AfterPrint);
-            // 
-            // xrLabel16
-            // 
-            this.xrLabel16.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "SysTemp.S_Fieid8")});
-            this.xrLabel16.LocationFloat = new DevExpress.Utils.PointFloat(693.9583F, 128.0417F);
-            this.xrLabel16.Name = "xrLabel16";
-            this.xrLabel16.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel16.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.xrLabel16.Visible = false;
-            this.xrLabel16.AfterPrint += new System.EventHandler(this.xrLabel16_AfterPrint);
-            // 
-            // xrLabel17
-            // 
-            this.xrLabel17.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "SysTemp.S_Fieid4")});
-            this.xrLabel17.LocationFloat = new DevExpress.Utils.PointFloat(693.9583F, 151.0417F);
-            this.xrLabel17.Name = "xrLabel17";
-            this.xrLabel17.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel17.SizeF = new System.Drawing.SizeF(100F, 23F);
-            this.xrLabel17.Visible = false;
-            // 
             // xrLabel3
             // 
-            this.xrLabel3.DataBindings.AddRange(new DevExpress.XtraReports.UI.XRBinding[] {
-            new DevExpress.XtraReports.UI.XRBinding("Text", null, "SysTemp.S_Fieid18")});
             this.xrLabel3.Font = new System.Drawing.Font("Angsana New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(386.4582F, 150.4167F);
             this.xrLabel3.Name = "xrLabel3";
@@ -853,29 +769,17 @@ namespace PS_WebCamera
 
         private void xrLabel14_AfterPrint(object sender, EventArgs e)
         {
-            var lvName30 = xrLabel14.Text;
-            var SubName = lvName30.Substring(3, 1) + "/";
-            var Directory = xrLabel17.Text + "/";
-            var lvPath = "C:/PicTakow/" + Directory + SubName + lvName30;
-            xrPictureBox2.Image = System.Drawing.Image.FromFile(lvPath);
+            
         }
 
         private void xrLabel15_AfterPrint(object sender, EventArgs e)
         {
-            var lvName45 = xrLabel15.Text;
-            var SubName = lvName45.Substring(3, 1) + "/";
-            var Directory = xrLabel17.Text + "/";
-            var lvPath = "C:/PicTakow/" + Directory + SubName + lvName45;
-            xrPictureBox3.Image = System.Drawing.Image.FromFile(lvPath);
+            
         }
 
         private void xrLabel16_AfterPrint(object sender, EventArgs e)
         {
-            var lvName90 = xrLabel16.Text;
-            var Directory = xrLabel17.Text + "/";
-            var SubName = lvName90.Substring(3, 1) + "/";
-            var lvPath = "C:/PicTakow/" + Directory + SubName + lvName90;
-            xrPictureBox4.Image = System.Drawing.Image.FromFile(lvPath);
+            
         }
 
         private void Report1Cane1_AfterPrint(object sender, EventArgs e)

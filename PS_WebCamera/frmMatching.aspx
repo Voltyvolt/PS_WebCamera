@@ -85,14 +85,138 @@
         </Items>
     </dx:ASPxFormLayout>
     <br />
-
-    <center>
-        <div>
-
-      </div>
-    </center>
-
-    <br />
+    <dx:ASPxPanel ID="ASPxPanel1" runat="server" Width="200px">
+        <PanelCollection>
+<dx:PanelContent runat="server">
+    <dx:ASPxFormLayout ID="ASPxFormLayout2" runat="server">
+        <Items>
+            <dx:LayoutGroup Caption="ตารางข้อมูล">
+                <Items>
+                    <dx:LayoutItem Caption="">
+                        <LayoutItemNestedControlCollection>
+                            <dx:LayoutItemNestedControlContainer runat="server">
+                                <right>
+                                    <dx:ASPxButton ID="ASPxButton22" runat="server" OnClick="ASPxButton22_Click" Text="พิมพ์รายงาน" Theme="MaterialCompact">
+                                    </dx:ASPxButton>
+                                </right>
+                                <br />
+                                <dx:ASPxGridView ID="GridV1" runat="server" AutoGenerateColumns="False" EnableTheming="True" OnRowCommand="GridV1_RowCommand" Theme="MaterialCompact" Width="742px">
+                                    <Columns>
+                                        <dx:GridViewDataTextColumn Caption="ดั้มที่" FieldName="I_Dump" ShowInCustomizationForm="True" VisibleIndex="1">
+                                        </dx:GridViewDataTextColumn>
+                                        <dx:GridViewDataTextColumn Caption="วันที่" FieldName="I_Date" ShowInCustomizationForm="True" VisibleIndex="2">
+                                        </dx:GridViewDataTextColumn>
+                                        <dx:GridViewDataTextColumn Caption="เวลา" FieldName="I_Time" ShowInCustomizationForm="True" VisibleIndex="3">
+                                        </dx:GridViewDataTextColumn>
+                                        <dx:GridViewDataTextColumn Caption="เลือก" ShowInCustomizationForm="True" VisibleIndex="7">
+                                            <DataItemTemplate>
+                                                <dx:ASPxButton ID="ASPxButton21" runat="server" CommandName="E" Text="เลือก" Theme="Material">
+                                                </dx:ASPxButton>
+                                            </DataItemTemplate>
+                                        </dx:GridViewDataTextColumn>
+                                        <dx:GridViewDataTextColumn Caption="ราง" FieldName="I_Rail" ShowInCustomizationForm="True" VisibleIndex="0">
+                                        </dx:GridViewDataTextColumn>
+                                        <dx:GridViewDataTextColumn Caption="รูปที่ 1" FieldName="I_Name_30" ShowInCustomizationForm="True" Visible="False" VisibleIndex="4">
+                                        </dx:GridViewDataTextColumn>
+                                        <dx:GridViewDataTextColumn Caption="รูปที่ 2" FieldName="I_Name_45" ShowInCustomizationForm="True" Visible="False" VisibleIndex="5">
+                                        </dx:GridViewDataTextColumn>
+                                        <dx:GridViewDataTextColumn Caption="รูปที่ 3" FieldName="I_Name_60" ShowInCustomizationForm="True" Visible="False" VisibleIndex="6">
+                                        </dx:GridViewDataTextColumn>
+                                    </Columns>
+                                    <Border BorderColor="#0066FF" BorderStyle="Solid" BorderWidth="2px" />
+                                </dx:ASPxGridView>
+                                <br />
+                                <dx:ASPxFormLayout ID="ASPxFormLayout5" runat="server" Width="500px">
+                                    <Items>
+                                        <dx:LayoutGroup Caption="ข้อมูลรูปภาพ" ColCount="12">
+                                            <Items>
+                                                <dx:LayoutItem Caption="วันที่" ColSpan="4">
+                                                    <LayoutItemNestedControlCollection>
+                                                        <dx:LayoutItemNestedControlContainer runat="server">
+                                                            <dx:ASPxTextBox ID="txtDate" runat="server" ReadOnly="True">
+                                                            </dx:ASPxTextBox>
+                                                        </dx:LayoutItemNestedControlContainer>
+                                                    </LayoutItemNestedControlCollection>
+                                                </dx:LayoutItem>
+                                                <dx:LayoutItem Caption="ดั้มที่" ColSpan="4">
+                                                    <LayoutItemNestedControlCollection>
+                                                        <dx:LayoutItemNestedControlContainer runat="server">
+                                                            <dx:ASPxTextBox ID="txtDump" runat="server" ReadOnly="True">
+                                                            </dx:ASPxTextBox>
+                                                        </dx:LayoutItemNestedControlContainer>
+                                                    </LayoutItemNestedControlCollection>
+                                                </dx:LayoutItem>
+                                                <dx:LayoutItem Caption="เวลา" ColSpan="4">
+                                                    <LayoutItemNestedControlCollection>
+                                                        <dx:LayoutItemNestedControlContainer runat="server">
+                                                            <dx:ASPxTextBox ID="txtTime" runat="server" ReadOnly="True">
+                                                            </dx:ASPxTextBox>
+                                                        </dx:LayoutItemNestedControlContainer>
+                                                    </LayoutItemNestedControlCollection>
+                                                </dx:LayoutItem>
+                                                <dx:LayoutItem Caption="เลขที่คิว" ColSpan="4">
+                                                    <LayoutItemNestedControlCollection>
+                                                        <dx:LayoutItemNestedControlContainer runat="server">
+                                                            <dx:ASPxTextBox ID="txtQNo" runat="server" AutoPostBack="True" BackColor="#FFFF99" OnTextChanged="txtQNo_TextChanged">
+                                                            </dx:ASPxTextBox>
+                                                        </dx:LayoutItemNestedControlContainer>
+                                                    </LayoutItemNestedControlCollection>
+                                                </dx:LayoutItem>
+                                                <dx:LayoutItem Caption="โควต้า" ColSpan="4">
+                                                    <LayoutItemNestedControlCollection>
+                                                        <dx:LayoutItemNestedControlContainer runat="server">
+                                                            <dx:ASPxTextBox ID="txtQuota" runat="server" Enabled="False" ReadOnly="True">
+                                                            </dx:ASPxTextBox>
+                                                        </dx:LayoutItemNestedControlContainer>
+                                                    </LayoutItemNestedControlCollection>
+                                                </dx:LayoutItem>
+                                                <dx:LayoutItem Caption="ทะเบียนรถ" ColSpan="4">
+                                                    <LayoutItemNestedControlCollection>
+                                                        <dx:LayoutItemNestedControlContainer runat="server">
+                                                            <dx:ASPxTextBox ID="txtCarNum" runat="server" Enabled="False" ReadOnly="True">
+                                                            </dx:ASPxTextBox>
+                                                        </dx:LayoutItemNestedControlContainer>
+                                                    </LayoutItemNestedControlCollection>
+                                                </dx:LayoutItem>
+                                            </Items>
+                                        </dx:LayoutGroup>
+                                    </Items>
+                                </dx:ASPxFormLayout>
+                                <br />
+                                <dx:ASPxPanel ID="ASPxPanel2" runat="server" Width="200px">
+                                    <PanelCollection>
+                                        <dx:PanelContent runat="server">
+                                            <dx:ASPxImage ID="ASPxImage1" runat="server" Height="200px" ImageUrl="~/images/568122.png" ShowLoadingImage="True" Width="300px">
+                                            </dx:ASPxImage>
+                                            <dx:ASPxLabel ID="lbName1" runat="server" Text="รูปที่ 1">
+                                            </dx:ASPxLabel>
+                                            <dx:ASPxImage ID="ASPxImage2" runat="server" Height="200px" ImageUrl="~/images/568122.png" ShowLoadingImage="True" Width="300px">
+                                            </dx:ASPxImage>
+                                            <dx:ASPxLabel ID="lbName2" runat="server" Text="รูปที่ 2">
+                                            </dx:ASPxLabel>
+                                            <dx:ASPxImage ID="ASPxImage3" runat="server" Height="200px" ImageUrl="~/images/568122.png" ShowLoadingImage="True" Width="300px">
+                                            </dx:ASPxImage>
+                                            <dx:ASPxLabel ID="lbName3" runat="server" Text="รูปที่ 3">
+                                            </dx:ASPxLabel>
+                                            <center>
+                                                <dx:ASPxButton ID="btn_Delete" runat="server" OnClick="btn_Delete_Click" Text="ลบข้อมูล" Theme="Mulberry">
+                                                </dx:ASPxButton>
+                                                <dx:ASPxButton ID="btn_Cancel" runat="server" OnClick="btn_Cancel_Click" Text="ยกเลิก" Theme="Mulberry">
+                                                </dx:ASPxButton>
+                                            </center>
+                                        </dx:PanelContent>
+                                    </PanelCollection>
+                                </dx:ASPxPanel>
+                            </dx:LayoutItemNestedControlContainer>
+                        </LayoutItemNestedControlCollection>
+                    </dx:LayoutItem>
+                </Items>
+            </dx:LayoutGroup>
+        </Items>
+    </dx:ASPxFormLayout>
+            </dx:PanelContent>
+</PanelCollection>
+    </dx:ASPxPanel>
     <br />
     <br />
     <dx:ASPxSplitter ID="ASPxSplitter1" runat="server" Height="900px">
@@ -115,11 +239,11 @@
                     <dx:LayoutItem Caption="" ColSpan="6" VerticalAlign="Middle">
                         <LayoutItemNestedControlCollection>
                             <dx:LayoutItemNestedControlContainer runat="server">
-                                <dx:ASPxButton ID="btnAdd1F" runat="server" Text="รูปที่ 1" OnClick="btnAdd1F_Click">
+                                <dx:ASPxButton ID="btnAdd1F" runat="server" Text="รูปที่ 1">
                                 </dx:ASPxButton>
-                                <dx:ASPxButton ID="btnAdd1S" runat="server" Text="รูปที่ 2" OnClick="btnAdd1S_Click">
+                                <dx:ASPxButton ID="btnAdd1S" runat="server" Text="รูปที่ 2">
                                 </dx:ASPxButton>
-                                <dx:ASPxButton ID="btnAdd1T" runat="server" Text="รูปที่ 3" OnClick="btnAdd1T_Click">
+                                <dx:ASPxButton ID="btnAdd1T" runat="server" Text="รูปที่ 3">
                                 </dx:ASPxButton>
                             </dx:LayoutItemNestedControlContainer>
                         </LayoutItemNestedControlCollection>
@@ -134,7 +258,7 @@
                     <dx:LayoutItem Caption="" ColSpan="6">
                         <LayoutItemNestedControlCollection>
                             <dx:LayoutItemNestedControlContainer runat="server">
-                                <dx:ASPxButton ID="btnAdd2F" runat="server" Text="รูปที่ 1" OnClick="btnAdd2F_Click">
+                                <dx:ASPxButton ID="btnAdd2F" runat="server" Text="รูปที่ 1">
                                 </dx:ASPxButton>
                                 <dx:ASPxButton ID="btnAdd2S" runat="server" Text="รูปที่ 2" OnClick="btnAdd2S_Click">
                                 </dx:ASPxButton>
@@ -245,137 +369,21 @@
             <dx:SplitterPane  ScrollBars="Auto">
                 <ContentCollection>
 <dx:SplitterContentControl runat="server">
-    <dx:ASPxFormLayout ID="ASPxFormLayout2" runat="server">
-        <Items>
-            <dx:LayoutGroup Caption="ตารางข้อมูล">
-                <Items>
-                    <dx:LayoutItem Caption="">
-                        <LayoutItemNestedControlCollection>
-                            <dx:LayoutItemNestedControlContainer runat="server">
-                                <right><dx:ASPxButton ID="ASPxButton22" runat="server" Text="พิมพ์รายงาน" Theme="MaterialCompact" OnClick="ASPxButton22_Click">
-                                </dx:ASPxButton>
-                                    </right>
-                                <br />
-                                <dx:ASPxGridView ID="GridV1" runat="server" AutoGenerateColumns="False" EnableTheming="True" OnRowCommand="GridV1_RowCommand" Theme="MaterialCompact" Width="742px">
-                                    <Columns>
-                                        <dx:GridViewDataTextColumn Caption="ดั้มที่" FieldName="I_Dump" ShowInCustomizationForm="True" VisibleIndex="1">
-                                        </dx:GridViewDataTextColumn>
-                                        <dx:GridViewDataTextColumn Caption="วันที่" FieldName="I_Date" ShowInCustomizationForm="True" VisibleIndex="2">
-                                        </dx:GridViewDataTextColumn>
-                                        <dx:GridViewDataTextColumn Caption="เวลา" FieldName="I_Time" ShowInCustomizationForm="True" VisibleIndex="3">
-                                        </dx:GridViewDataTextColumn>
-                                        <dx:GridViewDataTextColumn Caption="เลือก" ShowInCustomizationForm="True" VisibleIndex="7">
-                                            <DataItemTemplate>
-                                                <dx:ASPxButton ID="ASPxButton21" runat="server" CommandName="E" Text="เลือก" Theme="Material">
-                                                </dx:ASPxButton>
-                                            </DataItemTemplate>
-                                        </dx:GridViewDataTextColumn>
-                                        <dx:GridViewDataTextColumn Caption="ราง" FieldName="I_Rail" ShowInCustomizationForm="True" VisibleIndex="0">
-                                        </dx:GridViewDataTextColumn>
-                                        <dx:GridViewDataTextColumn Caption="รูปที่ 1" FieldName="I_Name_30" ShowInCustomizationForm="True" Visible="False" VisibleIndex="4">
-                                        </dx:GridViewDataTextColumn>
-                                        <dx:GridViewDataTextColumn Caption="รูปที่ 2" FieldName="I_Name_45" ShowInCustomizationForm="True" Visible="False" VisibleIndex="5">
-                                        </dx:GridViewDataTextColumn>
-                                        <dx:GridViewDataTextColumn Caption="รูปที่ 3" FieldName="I_Name_60" ShowInCustomizationForm="True" Visible="False" VisibleIndex="6">
-                                        </dx:GridViewDataTextColumn>
-                                    </Columns>
-                                    <Border BorderColor="#0066FF" BorderStyle="Solid" BorderWidth="2px" />
-                                </dx:ASPxGridView>
-                            </dx:LayoutItemNestedControlContainer>
-                        </LayoutItemNestedControlCollection>
-                    </dx:LayoutItem>
-                </Items>
-            </dx:LayoutGroup>
-        </Items>
-    </dx:ASPxFormLayout>
     <br />
-    <dx:ASPxFormLayout ID="ASPxFormLayout5" runat="server" Width="500px">
-        <Items>
-            <dx:LayoutGroup Caption="ข้อมูลรูปภาพ" ColCount="12">
-                <Items>
-                    <dx:LayoutItem Caption="วันที่" ColSpan="4">
-                        <LayoutItemNestedControlCollection>
-                            <dx:LayoutItemNestedControlContainer runat="server">
-                                <dx:ASPxTextBox ID="txtDate" runat="server" ReadOnly="True">
-                                </dx:ASPxTextBox>
-                            </dx:LayoutItemNestedControlContainer>
-                        </LayoutItemNestedControlCollection>
-                    </dx:LayoutItem>
-                    <dx:LayoutItem Caption="ดั้มที่" ColSpan="4">
-                        <LayoutItemNestedControlCollection>
-                            <dx:LayoutItemNestedControlContainer runat="server">
-                                <dx:ASPxTextBox ID="txtDump" runat="server" ReadOnly="True">
-                                </dx:ASPxTextBox>
-                            </dx:LayoutItemNestedControlContainer>
-                        </LayoutItemNestedControlCollection>
-                    </dx:LayoutItem>
-                    <dx:LayoutItem Caption="เวลา" ColSpan="4">
-                        <LayoutItemNestedControlCollection>
-                            <dx:LayoutItemNestedControlContainer runat="server">
-                                <dx:ASPxTextBox ID="txtTime" runat="server" ReadOnly="True">
-                                </dx:ASPxTextBox>
-                            </dx:LayoutItemNestedControlContainer>
-                        </LayoutItemNestedControlCollection>
-                    </dx:LayoutItem>
-                    <dx:LayoutItem Caption="เลขที่คิว" ColSpan="4">
-                        <LayoutItemNestedControlCollection>
-                            <dx:LayoutItemNestedControlContainer runat="server">
-                                <dx:ASPxTextBox ID="txtQNo" runat="server" AutoPostBack="True" OnTextChanged="txtQNo_TextChanged" BackColor="#FFFF99">
-                                </dx:ASPxTextBox>
-                            </dx:LayoutItemNestedControlContainer>
-                        </LayoutItemNestedControlCollection>
-                    </dx:LayoutItem>
-                    <dx:LayoutItem Caption="โควต้า" ColSpan="4">
-                        <LayoutItemNestedControlCollection>
-                            <dx:LayoutItemNestedControlContainer runat="server">
-                                <dx:ASPxTextBox ID="txtQuota" runat="server" Enabled="False" ReadOnly="True">
-                                </dx:ASPxTextBox>
-                            </dx:LayoutItemNestedControlContainer>
-                        </LayoutItemNestedControlCollection>
-                    </dx:LayoutItem>
-                    <dx:LayoutItem Caption="ทะเบียนรถ" ColSpan="4">
-                        <LayoutItemNestedControlCollection>
-                            <dx:LayoutItemNestedControlContainer runat="server">
-                                <dx:ASPxTextBox ID="txtCarNum" runat="server" Enabled="False" ReadOnly="True">
-                                </dx:ASPxTextBox>
-                            </dx:LayoutItemNestedControlContainer>
-                        </LayoutItemNestedControlCollection>
-                    </dx:LayoutItem>
-                </Items>
-            </dx:LayoutGroup>
-        </Items>
-    </dx:ASPxFormLayout>
                     <br />
     <center>
-        <dx:ASPxImage ID="ASPxImage1" runat="server" Height="200px" ImageUrl="~/images/568122.png" ShowLoadingImage="True" Width="300px">
-    </dx:ASPxImage>
-        <br />
-        <dx:ASPxLabel runat="server" Text="รูปที่ 1" ID="lbName1"></dx:ASPxLabel>
         <br />
         <br />
-         <dx:ASPxImage ID="ASPxImage2" runat="server" Height="200px" ImageUrl="~/images/568122.png" ShowLoadingImage="True" Width="300px">
-    </dx:ASPxImage>
-        <br />
-        <dx:ASPxLabel runat="server" Text="รูปที่ 2" ID="lbName2"></dx:ASPxLabel>
         <br />
         <br />
-         <dx:ASPxImage ID="ASPxImage3" runat="server" Height="200px" ImageUrl="~/images/568122.png" ShowLoadingImage="True" Width="300px">
-    </dx:ASPxImage>
         <br />
-        <dx:ASPxLabel runat="server" Text="รูปที่ 3" ID="lbName3"></dx:ASPxLabel>
+        <br />
+        <br />
         <br />
         <br />
         
     </center>
     <div>
-        <center>
-          
-                                    <dx:ASPxButton ID="btn_Delete" runat="server" OnClick="btn_Delete_Click" Text="ลบข้อมูล" Theme="Mulberry">
-                                    </dx:ASPxButton>
-                                
-                                   <dx:ASPxButton ID="btn_Cancel" runat="server" Text="ยกเลิก" Theme="Mulberry" OnClick="btn_Cancel_Click">
-                                    </dx:ASPxButton>
-         </center>            
     </div>
     
     

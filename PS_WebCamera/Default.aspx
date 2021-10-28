@@ -7,6 +7,5 @@
        </dx:ASPxImage>
 
        <br />
-       <br />
 
 </asp:Content>
